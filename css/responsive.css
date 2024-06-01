@@ -1,0 +1,13 @@
+@media (max-width: 1440px) {
+    .l-box {
+        max-width: 679px;
+    }
+    .box {
+        max-width: 328px;
+    }
+    #main {
+        .m-content {
+            max-width: 1024px;
+        }
+    }
+}
