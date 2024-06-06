@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+    html {
+        font-size: 13px;
+    }
     .l-box, .box, .s-box, .s-box--long {
         border-radius: 25px;
         border: 5px solid var(--dark-gray-color);
@@ -25,6 +28,9 @@
     }
 }
 
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 1080px) {
     .l-box {
         min-width: 679px;
@@ -41,6 +47,13 @@
         padding: 0;
         .m-content {
             max-width: 328px;
+            .m-content__structure {
+                #about-box.m-content__inner {
+                    .m-content__segment {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
     .l-box {
