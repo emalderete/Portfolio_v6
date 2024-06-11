@@ -46,6 +46,11 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(0deg, #131313 0%, #232323 90%);
     padding: 2rem 2.5rem;
     margin: 10px 0;
+    transition: var(--transition);
+    &:hover {
+        box-shadow: 0 0 10px var(--primary-color);
+        border-color: var(--gray-color);
+    }
 }
 
 .l-box {
@@ -248,6 +253,14 @@ h1, h2, h3, h4, h5, h6 {
                                 }
                             }
                         }
+                    }
+                }
+                #clock {
+                    color: var(--light-color);
+                    h2 {
+                        filter: drop-shadow(0 0 7px var(--primary-color));
+                        font-size: 5em;
+                        text-align: center;
                     }
                 }
             }
