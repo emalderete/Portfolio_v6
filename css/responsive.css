@@ -53,6 +53,11 @@
                         width: 100%;
                     }
                 }
+                #projects-box {
+                    .projects__inner {
+                        width: 100% !important;
+                    }
+                }
             }
         }
     }
