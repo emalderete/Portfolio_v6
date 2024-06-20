@@ -25,7 +25,8 @@ html {
 
 #body {
     font-family: 'K2D';
-    background: linear-gradient(0deg, var(--dark-gray-color) 0%, var(--dark-color) 90%);
+    /* background: linear-gradient(0deg, var(--dark-gray-color) 0%, var(--dark-color) 90%); */
+    background-image: url(../img/ui/main-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +84,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     border: 6px solid var(--dark-gray-color);
     border-radius: 40px;
-    background: linear-gradient(0deg, #131313 0%, #232323 90%);
+    background-color: var(--light-shadows);
+    /* background: linear-gradient(0deg, #131313 0%, #232323 90%); */
+    backdrop-filter: blur(10px);
     padding: 2rem 2.5rem;
     margin: 10px 0;
     transition: var(--transition);
@@ -246,10 +249,15 @@ h1, h2, h3, h4, h5, h6 {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            margin: 1.2rem 0;
+                            margin: 1rem 0;
                             img {
                                 width: 30px;
                                 height: 30px;
+                            }
+                            span:last-child {
+                                color: rgb(from var(--primary-color) r 40% 45%);
+                                filter: drop-shadow(0 0 5px var(--primary-color));
+                                font-size: 1.4em;
                             }
                         }
                     }
