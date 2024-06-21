@@ -331,8 +331,26 @@ h1, h2, h3, h4, h5, h6 {
                     width: 65%;
                     background-color: var(--primary-color);
                     clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%);
+                    position: relative;
+                    overflow: hidden;
+                    .highlight-projects-bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 1050px;
+                        animation: smothTranslation 15000ms ease-in-out infinite alternate;
+                    }
                 }
             }
         }
+    }
+}
+
+@keyframes smothTranslation {
+    0% {
+        transform: rotateZ(-35deg) translate(50px, -220px);
+    }
+    100% {
+        transform: rotateZ(-35deg) translate(-515px, -220px);
     }
 }
