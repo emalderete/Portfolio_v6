@@ -1,21 +1,26 @@
 const clock_container = document.querySelector('#clock');
 
 function getTheTime(){
-    const time = new Date();
-    var time_hours = time.getHours();
-    var time_minutes = time.getMinutes();
+    const date = new Date();
+    const options = {
+        timeZone : 'America/Argentina/Buenos_Aires',
+        hour : 'numeric',
+        minute : 'numeric',
+        hour12 : false
+    }
+    const formatter = new Intl.DateTimeFormat('es-AR', options);
+    const time = formatter.formatToParts(date);
+    console.log(time);
 
-    if(time_hours < 10) {
+    if(time[0] < 10) {
         time_hours = '0' + time_hours;
     }
 
-    if(time_minutes < 10) {
+    if(time[2] < 10) {
         time_minutes = '0' + time_minutes;
     }
 
-    console.log('Actualización cada segundo');
-
-    clock_container.innerHTML = `<h2>${time_hours}<span class="clock__seconds">:</span>${time_minutes}</h2>`;
+    clock_container.innerHTML = `<h2>${time[0].value}<span class="clock__seconds">${time[1].value}</span>${time[2].value}</h2><h5>Argentina time</h5>`;
 }
 
 getTheTime();

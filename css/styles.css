@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 2.5rem;
     margin: 10px 0;
     transition: var(--transition);
+    position: relative;
     &:hover {
         box-shadow: 0 0 10px var(--primary-color);
         border-color: var(--gray-color);
@@ -293,11 +294,19 @@ h1, h2, h3, h4, h5, h6 {
                             a {
                                 text-decoration: none;
                                 width: 45px;
-                                padding: 0.7rem;
+                                height: 45px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 border-radius: 99px 99px 15px 99px;
                                 background-color: var(--primary-color);
-                                img {
-                                    width: 100%;
+                                font-size: 2.1em;
+                                color: var(--light-color);
+                                transition: 150ms;
+                                &:hover {
+                                    color: var(--primary-color);
+                                    background-color: var(--light-color);
+                                    box-shadow: 0 0 15px var(--primary-color);
                                 }
                             }
                         }
@@ -307,7 +316,10 @@ h1, h2, h3, h4, h5, h6 {
                     color: var(--light-color);
                     h2 {
                         filter: drop-shadow(0 0 7px var(--primary-color));
-                        font-size: 5em;
+                        font-size: 4em;
+                        text-align: center;
+                    }
+                    h5 {
                         text-align: center;
                     }
                 }
@@ -348,9 +360,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes smothTranslation {
     0% {
-        transform: rotateZ(-35deg) translate(50px, -220px);
+        transform: rotateZ(-35deg) translate(55px, -215px);
     }
     100% {
-        transform: rotateZ(-35deg) translate(-515px, -220px);
+        transform: rotateZ(-35deg) translate(-520px, -215px);
     }
 }
