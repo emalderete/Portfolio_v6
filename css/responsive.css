@@ -1,3 +1,15 @@
+:root {
+    --light-color: #ffffff;
+    --light-gray-color: #cacaca;
+    --gray-color: #555555;
+    --dark-gray-color: #444444;
+    --dark-color: #222222;
+    --primary-color: #CE0843;
+    --transition: 350ms;
+    --light-shadows: #00000038;
+    --heavy-shadows: #00000078;
+}
+
 @media (max-width: 1440px) {
     html {
         font-size: 13px;
@@ -54,8 +66,11 @@
                     }
                 }
                 #projects-box {
-                    .projects__inner {
-                        width: 100% !important;
+                    .projects__inner:first-child {
+                        width: 100%;
+                    }
+                    .projects__inner:last-child {
+                        width: 100%;
                     }
                 }
             }
