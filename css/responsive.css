@@ -36,6 +36,26 @@
     #main {
         .m-content {
             max-width: 1024px;
+            .m-content__structure {
+                #small-boxes-group {
+                    margin-top: 0;
+                    #social-media-links {
+                        .social__container {
+                            li {
+                                a {
+                                    width: 45px;
+                                    height: 45px;
+                                }
+                            }
+                        }
+                    }
+                    #clock {
+                        h2 {
+                            font-size: 4em;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -264,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
             #small-boxes-group {
+                margin-top: -1rem;
                 #n-logo {
                     padding: 2rem;
                     img {
@@ -292,8 +293,8 @@ h1, h2, h3, h4, h5, h6 {
                             justify-content: center;
                             a {
                                 text-decoration: none;
-                                width: 45px;
-                                height: 45px;
+                                width: 55px;
+                                height: 55px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
