@@ -55,7 +55,22 @@
                         }
                     }
                 }
+                #projects-box {
+                    .projects__inner:last-child {
+                        .highlight-projects-bg {
+                            width: 1050px;
+                        }
+                    }
+                }
             }
+        }
+    }
+    @keyframes smothTranslation {
+        0% {
+            transform: rotateZ(-35deg) translate(55px, -215px);
+        }
+        100% {
+            transform: rotateZ(-35deg) translate(-520px, -215px);
         }
     }
 }
@@ -109,5 +124,9 @@
     .l-box, .box, .s-box, .s-box--long {
         border-radius: 15px;
         border: 4px solid var(--dark-gray-color);
+    }
+    .headline {
+        margin: 0;
+        padding: 2rem;
     }
 }
